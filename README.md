@@ -20,7 +20,8 @@
 
 **Langkah 2**
 - Hitung IP Address yang dibutuhkan (Jumlah Host, Router, dan Server). Pada soal ini ada kurang lebih 5845 IP Address maka subnet yang dipakai untuk membuat pohon IP yaitu subnet 19. 
-| Nama |Host yang dibutuhkan |Host yang tersedia |
+
+| Nama | Jumlah IP | Netmask |
 |--|--|--|
 | A1 | 721 | /22 |
 | A2 | 252 | /24 |
@@ -38,6 +39,7 @@
 | A14	| 2 | /30 |
 | A15	| 1001 | /22 |
 | **Total** | **5845** | **/19** |
+
 - Buat pohon IP berdasarkan pembagian subnet yang ada pada topologi seperti gambar berikut ini:
 
 ![Gambar 3](Images/VLSM.PNG)
