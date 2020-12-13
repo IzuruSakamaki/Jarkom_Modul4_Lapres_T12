@@ -4,7 +4,7 @@
 - Mohammad Ifaizul Hasan – 05311840000029
 
 ## Soal Shift Modul 4 Subnetting & Routing
-![Gambar 1](Images/Soal Shift Modul 4.png)
+![Gambar 1](Images/Soal%20Shift%20Modul%204.png)
 
 **Keterangan**
 - Cloud diberikan IP TUNTAP
@@ -19,7 +19,9 @@
 ![Gambar 2](Images/Pembagian_Subnet.png)
 
 **Langkah 2**
-- Hitung IP Address yang dibutuhkan (Jumlah Host, Router, dan Server). Pada soal ini ada kurang lebih 5842 IP Address maka subnet yang dipakai untuk membuat pohon IP yaitu subnet 19.
+- Hitung IP Address yang dibutuhkan (Jumlah Host, Router, dan Server). Pada soal ini ada kurang lebih 5842 IP Address maka subnet yang dipakai untuk membuat pohon IP yaitu subnet 19. 
 - Buat pohon IP berdasarkan pembagian subnet yang ada pada topologi seperti gambar berikut ini:
 
 ![Gambar 3](Images/VLSM.PNG)
+**Keterangan :**
+- Untuk Server IP yang digunakan yaitu IP DMZ
