@@ -104,7 +104,7 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang
 - Pada static routing juga dibutuhkan default routing agar router dapat mengirimkan paket sesuai dengan tujuan. Default routing dibutuhkan untuk router yang berada di bawah router utama (router yang terhubung internet), contohnya BLITAR.
 
 ![Gambar 17](Images/VLSM13.PNG)
-- Jangan lupa untuk mengisi Static Routes pada SURABAYA terhadap subnet A4 & A11 agar saat melakukan ping antar router tidak terjadi kesalahan ataupun kegagalan.
+- Jangan lupa untuk mengisi Static Routes pada SURABAYA terhadap subnet A4 & A11 agar saat melakukan ping antar router maupun antara router dan client tidak terjadi kesalahan ataupun kegagalan.
 
 - Gambar untuk Static Routes pada SURABAYA terhadap subnet A4
 
@@ -120,6 +120,7 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang
 4. Next Hop 192.168.1.2 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada KEDIRI yang mengarah ke BLITAR
 5. Next Hop 192.168.0.2 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada KEDIRI yang mengarah ke BATU
 6. Next Hop 192.168.0.6 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada BATU yang mengarah ke SURABAYA
+7. Static Routes pada SURABAYA terhadap subnet A4 dan A11 dilakukan agar saat melakukan ping antar router maupun antara router dan client tidak terjadi kegagalan. Contoh PING antar router yaitu:  KEDIRI (Router) -> PROBOLINGGO (Router) atau KEDIRI (Router) -> JEMBER (Client)
 
 **Konfigurasi pada SURABAYA -> MALANG (SERVER)**
 - Konfigurasi pada Server, routing dilakukan pada menu Desktop > IP Configuration namun menggunakan IP DMZ tiap kelompok. IP DMZ kelompok T12 yaitu **10.151.77.144/29** sehingga saat membuat pohon IP didapatkan hasil sebagai berikut: 
