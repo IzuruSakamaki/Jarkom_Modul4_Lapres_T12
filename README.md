@@ -76,6 +76,7 @@
 - Atur IP pada interface BLITAR yang mengarah ke TULUNGAGUNG dengan 192.168.12.1.
 
 ![Gambar 11](Images/VLSM7.PNG)
+
 Atur IP pada client dengan cara :
 - Masuk ke client
 - Pilih tab Desktop
@@ -87,4 +88,27 @@ Atur IP pada client dengan cara :
 - Atur IP pada IP Configuration TULUNGAGUNG yang mengarah ke BLITAR dengan 192.168.12.2.
 
 ![Gambar 13](Images/VLSM9.PNG)
+
 Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang ada dalam topologi. Setelah selesai, lakukan langkah selanjutnya yaitu Routing agar topologi dapat berfungsi dengan semestinya.
+
+**Routing pada SURABAYA -> TULUNGAGUNG**
+- Pada CPT, Routing dapat dilakukan pada menu Config > Routing > Static pada device Router. Lalu isi Static Routes seperti gambar dibawah pada SURABAYA dan tekan tombol Add
+
+![Gambar 14](Images/VLSM10.PNG)
+- Kemudian isi Static Routes seperti gambar dibawah pada BATU dan tekan tombol Add.
+
+![Gambar 15](Images/VLSM11.PNG)
+- Lalu isi Static Routes seperti gambar dibawah pada KEDIRI dan tekan tombol Add.
+
+![Gambar 16](Images/VLSM12.PNG)
+- Pada static routing juga dibutuhkan default routing agar router dapat mengirimkan paket sesuai dengan tujuan. Default routing dibutuhkan untuk router yang berada di bawah router utama (router yang terhubung internet), contohnya BLITAR.
+
+![Gambar 17](Images/VLSM13.PNG)
+
+**Keterangan**
+1. Network 192.168.12.0 adalah Network ID yang akan dihubungkan
+2. Mask 255.255.252.0 adalah netmask dari subnet A1
+3. Next Hop 192.168.1.1 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada BLITAR yang mengarah ke KEDIRI
+4. Next Hop 192.168.1.1 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada KEDIRI yang mengarah ke BLITAR
+5. Next Hop 192.168.0.2 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada KEDIRI yang mengarah ke BATU
+6. Next Hop 192.168.0.6 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada BATU yang mengarah ke SURABAYA
