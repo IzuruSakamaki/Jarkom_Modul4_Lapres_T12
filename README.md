@@ -49,5 +49,23 @@
 **Langkah 3**
 - Lakukan konfigurasi pada Router, Client, Server, dan Cloud.
 
+**Konfigurasi pada SURABAYA -> TULUNGAGUNG**
+- Atur IP pada interface SURABAYA yang mengarah ke BATU dengan 192.168.0.5.
 
+![Gambar 4](Images/VLSM1.PNG)
+- Atur IP pada interface BATU yang mengarah ke SURABAYA dengan 192.168.0.6.
 
+![Gambar 5](Images/VLSM2.PNG)
+
+- Atur IP pada interface BATU yang mengarah ke KEDIRI dengan 192.168.0.1.
+
+![Gambar 6](Images/VLSM3.PNG)
+- Atur IP pada interface KEDIRI yang mengarah ke BATU dengan 192.168.0.1.
+
+![Gambar 7](Images/VLSM4.PNG)
+- Atur IP pada interface KEDIRI yang mengarah ke BLITAR dengan 192.168.1.1.
+
+![Gambar 8](Images/VLSM5.PNG)
+- Atur IP pada interface BLITAR yang mengarah ke KEDIRI dengan 192.168.1.2.
+
+![Gambar 9](Images/VLSM6.PNG)
