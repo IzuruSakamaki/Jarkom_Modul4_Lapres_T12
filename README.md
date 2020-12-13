@@ -139,5 +139,4 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang
 ![Gambar 21](Images/VLSM15.PNG)
 
 **Routing pada SURABAYA -> MALANG (SERVER)**
-- Routing pada Server dilakukan dengan cara yang sama yaitu dengan mengisi Static Routes namun Network ID (NID) menggunakan IP DMZ tiap kelompok. Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang ada dalam topologi. Setelah selesai, lakukan langkah selanjutnya yaitu Routing agar topologi dapat berfungsi dengan semestinya.
-
+- Routing pada Server dilakukan dengan cara yang sama yaitu dengan mengisi Static Routes namun Network ID (NID) menggunakan IP DMZ tiap kelompok. Lakukan hal yang sama untuk mengatur Network ID, Mask, dan Next Hop setiap router yang ada dalam topologi. 
