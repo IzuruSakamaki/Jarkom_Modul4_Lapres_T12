@@ -104,6 +104,14 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang
 - Pada static routing juga dibutuhkan default routing agar router dapat mengirimkan paket sesuai dengan tujuan. Default routing dibutuhkan untuk router yang berada di bawah router utama (router yang terhubung internet), contohnya BLITAR.
 
 ![Gambar 17](Images/VLSM13.PNG)
+- Jangan lupa untuk mengisi Static Routes pada SURABAYA terhadap subnet A4 & A11 agar saat melakukan ping antar router tidak terjadi kesalahan ataupun kegagalan.
+
+- Gambar untuk Static Routes pada SURABAYA terhadap subnet A4
+
+![Gambar 18](Images/VLSM16.PNG)
+- Gambar untuk Static Routes pada SURABAYA terhadap subnet A11
+
+![Gambar 19](Images/VLSM17.PNG)
 
 **Keterangan**
 1. Network 192.168.12.0 adalah Network ID yang akan dihubungkan
@@ -114,7 +122,7 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang
 6. Next Hop 192.168.0.6 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada BATU yang mengarah ke SURABAYA
 
 **Konfigurasi pada SURABAYA -> MALANG (SERVER)**
-- Konfigurasi pada Server, routing dilakukan pada menu Desktop > IP Configuration namun menggunakan IP DMZ tiap kelompok. IP DMZ kelompok T12 yaitu 10.151.77.144/29 sehingga saat membuat pohon IP didapatkan hasil sebagai berikut: 
+- Konfigurasi pada Server, routing dilakukan pada menu Desktop > IP Configuration namun menggunakan IP DMZ tiap kelompok. IP DMZ kelompok T12 yaitu **10.151.77.144/29** sehingga saat membuat pohon IP didapatkan hasil sebagai berikut: 
 
 | Nama | Jumlah IP | Netmask | Network ID |
 |--|--|--|--|
@@ -124,10 +132,10 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang
 - Atur IP pada menu Desktop > IP Configuration MALANG yang mengarah ke KEDIRI dengan 10.151.77.150.
 
 
-![Gambar 18](Images/VLSM14.PNG)
+![Gambar 20](Images/VLSM14.PNG)
 - Atur IP pada interface KEDIRI yang mengarah ke MALANG dengan 10.151.77.149.
 
-![Gambar 19](Images/VLSM15.PNG)
+![Gambar 21](Images/VLSM15.PNG)
 
 **Routing pada SURABAYA -> MALANG (SERVER)**
 - Routing pada Server dilakukan dengan cara yang sama yaitu dengan mengisi Static Routes namun Network ID (NID) menggunakan IP DMZ tiap kelompok. Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang ada dalam topologi. Setelah selesai, lakukan langkah selanjutnya yaitu Routing agar topologi dapat berfungsi dengan semestinya.
