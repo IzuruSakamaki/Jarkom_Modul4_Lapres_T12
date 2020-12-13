@@ -20,23 +20,23 @@
 
 **Langkah 2**
 - Hitung IP Address yang dibutuhkan (Jumlah Host, Router, dan Server). Pada soal ini ada kurang lebih 5845 IP Address maka subnet yang dipakai untuk membuat pohon IP yaitu subnet 19. 
-|Nama	|Host yang dibutuhkan |Host yang tersedia |
-|--   |--   |--     |
-|A1	  |721  |1022   |
-|A2	  |252  |254    |
-|A3	  |2    |2      |
-|A4	  |2    |2      |
-|A5	  |521	|1022   |
-|A6	  |13	  |14     |
-|A7	  |502	|510    |
-|A8	  |2	  |2      |
-|A9	  |2	  |2      |
-|A10	|701  |1022   |
-|A11	|2    |2      |
-|A12	|2021 |2046   |
-|A13	|101  |126    |
-|A14	|2    |2      |
-|A15	|1001 |1022   |
+| Nama |Host yang dibutuhkan |Host yang tersedia |
+|--|--|--|
+| A1 | 721 | /22 |
+| A2 | 252 | /24 |
+| A3 | 2 | /30 |
+| A4 | 2 | /30 |
+| A5 | 521 | /22 |
+| A6 | 13 | /28 |
+| A7 | 502 | /23 |
+| A8 | 2 | /30 |
+| A9 | 2 | /30 |
+| A10	| 701 | /22 |
+| A11	| 2 | /30 |
+| A12	| 2021 | /21 |
+| A13	| 101 | /25 |
+| A14	| 2 | /30 |
+| A15	| 1001 | /22 |
 | **Total** | **5845** | **/19** |
 - Buat pohon IP berdasarkan pembagian subnet yang ada pada topologi seperti gambar berikut ini:
 
