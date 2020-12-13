@@ -109,6 +109,20 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang
 1. Network 192.168.12.0 adalah Network ID yang akan dihubungkan
 2. Mask 255.255.252.0 adalah netmask dari subnet A1
 3. Next Hop 192.168.1.1 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada BLITAR yang mengarah ke KEDIRI
-4. Next Hop 192.168.1.1 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada KEDIRI yang mengarah ke BLITAR
+4. Next Hop 192.168.1.2 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada KEDIRI yang mengarah ke BLITAR
 5. Next Hop 192.168.0.2 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada KEDIRI yang mengarah ke BATU
 6. Next Hop 192.168.0.6 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada BATU yang mengarah ke SURABAYA
+
+**Konfigurasi pada SURABAYA -> MALANG (SERVER)**
+Konfigurasi pada Server, routing dilakukan pada menu Desktop > IP Configuration namun menggunakan IP DMZ tiap kelompok.
+- Atur IP pada menu Desktop > IP Configuration MALANG yang mengarah ke KEDIRI dengan 10.151.77.149.
+
+
+![Gambar 18](Images/VLSM14.PNG)
+- Atur IP pada interface KEDIRI yang mengarah ke MALANG dengan 10.151.77.149.
+
+![Gambar 19](Images/VLSM15.PNG)
+
+**Routing pada SURABAYA -> MALANG (SERVER)**
+Routing pada Server dilakukan dengan cara yang sama yaitu dengan mengisi Static Routes namun Network ID (NID) menggunakan IP DMZ tiap kelompok. Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang ada dalam topologi. Setelah selesai, lakukan langkah selanjutnya yaitu Routing agar topologi dapat berfungsi dengan semestinya.
+
