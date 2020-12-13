@@ -140,3 +140,19 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang
 
 **Routing pada SURABAYA -> MALANG (SERVER)**
 - Routing pada Server dilakukan dengan cara yang sama yaitu dengan mengisi Static Routes namun Network ID (NID) menggunakan IP DMZ tiap kelompok. Lakukan hal yang sama untuk mengatur Network ID, Mask, dan Next Hop setiap router yang ada dalam topologi. 
+
+## CIDR (Classless Inter Domain Routing) Pada UML
+**Langkah 1**
+- Melakukan labelling
+![Gambar 31](Images/labelingcidr.png)
+**Langkah 2**
+- Pembagian IP
+![Gambar 32](Images/treecidr.jpg)
+**Langkah 3**
+- Topologi UML
+![Gambar 33](Images/topocidr.jpg)
+**Langkah 4**
+- Interfaces (Belum Selesai)
+![Gambar 34](Images/interfacescidr.jpg)
+## KENDALA
+- Maaf mas untuk CIDR pada UML masih belum selesai, susah kali :)
