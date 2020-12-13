@@ -114,8 +114,14 @@ Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang
 6. Next Hop 192.168.0.6 (disebut gateway), adalah IP yang dituju ketika ingin menuju subnet poin 1, yaitu interface pada BATU yang mengarah ke SURABAYA
 
 **Konfigurasi pada SURABAYA -> MALANG (SERVER)**
-- Konfigurasi pada Server, routing dilakukan pada menu Desktop > IP Configuration namun menggunakan IP DMZ tiap kelompok.
-- Atur IP pada menu Desktop > IP Configuration MALANG yang mengarah ke KEDIRI dengan 10.151.77.149.
+- Konfigurasi pada Server, routing dilakukan pada menu Desktop > IP Configuration namun menggunakan IP DMZ tiap kelompok. IP DMZ kelompok T12 yaitu 10.151.77.144/29 sehingga saat membuat pohon IP didapatkan hasil sebagai berikut: 
+
+| Nama | Jumlah IP | Netmask | Network ID |
+|--|--|--|--|
+| A3 | 2 | /30 | 10.151.77.148 |
+| A14 | 2 | /30 | 10.151.77.144 |
+
+- Atur IP pada menu Desktop > IP Configuration MALANG yang mengarah ke KEDIRI dengan 10.151.77.150.
 
 
 ![Gambar 18](Images/VLSM14.PNG)
