@@ -69,3 +69,22 @@
 - Atur IP pada interface BLITAR yang mengarah ke KEDIRI dengan 192.168.1.2.
 
 ![Gambar 9](Images/VLSM6.PNG)
+- Selanjutnya atur IP pada subnet A1 & A2. 
+- Atur IP pada interface KEDIRI yang mengarah ke LUMAJANG dengan 192.168.1.1.
+
+![Gambar 10](Images/VLSM5.PNG)
+- Atur IP pada interface BLITAR yang mengarah ke TULUNGAGUNG dengan 192.168.12.1.
+
+![Gambar 11](Images/VLSM7.PNG)
+Atur IP pada client dengan cara :
+- Masuk ke client
+- Pilih tab Desktop
+- Pilih IP Configuration
+
+- Atur IP pada IP Configuration LUMAJANG yang mengarah ke KEDIRI dengan 192.168.1.3.
+
+![Gambar 12](Images/VLSM8.PNG)
+- Atur IP pada IP Configuration TULUNGAGUNG yang mengarah ke BLITAR dengan 192.168.12.2.
+
+![Gambar 13](Images/VLSM9.PNG)
+Lakukan hal yang sama untuk mengatur alamat IP setiap interface pada device yang ada dalam topologi. Setelah selesai, lakukan langkah selanjutnya yaitu Routing agar topologi dapat berfungsi dengan semestinya.
